@@ -6,22 +6,26 @@ import java.io.Writer;
  *
  * @author julian Tanausu
  */
-public class write {
-    public static void main(String[] args) {
-      String str = "Hello world!";
+public class close {
+   public static void main(String[] args) {
+      String s = "Hello World";
 
       // create a new writer
       Writer writer = new PrintWriter(System.out);
 
       try {
-          
-         // write a string
-         writer.write(str);
+         // append a string
+         writer.append(s);
 
-         // flush the writer. REFRESCAR
+         // flush the writer
          writer.flush();
 
-     
+         // append a new string
+         writer.append("\nThis is an example");
+
+         // flush and close the stream
+         writer.close();
+
       } catch (IOException ex) {
          ex.printStackTrace();
       }
