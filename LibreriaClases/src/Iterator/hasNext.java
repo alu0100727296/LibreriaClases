@@ -10,27 +10,23 @@ import java.util.ListIterator;
  * @author Julian Tanusu
  */
 public class hasNext {
- public static void main(String args[]) {
-      // Create an array list
-      ArrayList al = new ArrayList();
-      // add elements to the array list
-      al.add("C");
-      al.add("A");
-      al.add("E");
-      al.add("B");
-      al.add("D");
-      al.add("F");
-
-      // Use iterator to display contents of al
-      System.out.print("Original contents of al: ");
-      Iterator itr = al.iterator();
-      while(itr.hasNext()) {
-         Object element = itr.next();
-         System.out.print(element + " ");
-      }
-      System.out.println();
-      
-	
+    public static void main(String args[]) {
+        // Create an array list
+        ArrayList<String> lista = new ArrayList<String>();
+        // add elements to the array list
+     
+        lista.add("Pedro");
+        lista.add("Olga");
+        lista.add("Miguel");
+        lista.add("Antonio");
+        lista.add("Pedro");
+        
+        Iterator<String> it = lista.iterator();
+ 
+        while (it.hasNext()) {
+           System.out.println(it.next());
+        }
+        
        
     }
 }
