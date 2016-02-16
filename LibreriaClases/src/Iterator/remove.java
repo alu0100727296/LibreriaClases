@@ -1,36 +1,44 @@
-
 package Iterator;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.ListIterator;
 
 /**
  *
  * @author Julian Tanusu
  */
-public class hasNext {
+public class remove {
     public static void main(String args[]) {
-        // Create an array list
         ArrayList<String> lista = new ArrayList<String>();
-        // add elements to the array list
-     
         lista.add("Pedro");
         lista.add("Olga");
         lista.add("Miguel");
         lista.add("Antonio");
         lista.add("Pedro");
-        
-        Iterator<String> it = lista.iterator();
+       
+        /*
+        for (String nombre : lista) {
+            if (nombre.equals("Pedro")) {
+               lista.remove("Pedro");
+            }
  
-        while (it.hasNext()) {
-           System.out.println(it.next());
         }
-        System.out.println("--------------");
+        ERORRR
+        */
+        
+        Iterator<String> it= lista.iterator();
+ 
+        while(it.hasNext()) {
+
+            String nombre= it.next();
+            if (nombre.equals("Pedro")) {
+                it.remove();
+        }
+        }
+        
         for (String nombre : lista) {
            System.out.println(nombre);
         }
         
-       
     }
 }
