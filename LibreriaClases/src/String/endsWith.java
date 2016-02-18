@@ -10,15 +10,15 @@ public class endsWith {
    String str = "www.tutorialspoint.com";
    System.out.println(str);
 
-   // the end string to be checked
+   // el final del string para ser chequeado
    String endstr1 = ".com";
    String endstr2 = ".org";
 
-   // checks that string str ends with given substring
+   // cheaue los strings
    boolean retval1 = str.endsWith(endstr1);
    boolean retval2 = str.endsWith(endstr2);
 
-   // prints true if the string ends with given substring
+   // retorna true o false
    System.out.println("ends with " + endstr1 + " ? " + retval1);
    System.out.println("ends with " + endstr2 + " ? " + retval2);
    }
