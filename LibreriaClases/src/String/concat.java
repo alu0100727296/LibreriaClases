@@ -8,15 +8,15 @@ public class concat {
     public static void main(String[] args) {
   
         // print str1
-        String str1 = "self";
+        String str1 = "hola";
         System.out.println(str1);
  
-        // print str2 concatenated with str1
-        String str2 = str1.concat(" learning");
+        // guarda en str2 el str1 concantenado con learning
+        String str2 = str1.concat(" soy");
         System.out.println(str2);
    
-        // prints str3 concatenated with str2(and str1)
-        String str3 = str2.concat(" center");
+        // guarda en str3 el str2 concatenado con center
+        String str3 = str2.concat(" Juan");
         System.out.println(str3);
    }
 }
