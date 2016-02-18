@@ -9,13 +9,13 @@ public class charAt {
   
         String str = "This is tutorialspoint";
                    
-        // prints character at 1st location
+        // imprime el caracte de la primera posicion
         System.out.println(str.charAt(0));
           
-        // prints character at 5th location i.e white-space character
+        // imprime el caracter equivalente ala quinta posicion (el espacio)
         System.out.println(str.charAt(4));
           
-        // prints character at 18th location 
+        // imprime el caracter equivalente ala 18 posicion
         System.out.println(str.charAt(17));
    }
 } 
