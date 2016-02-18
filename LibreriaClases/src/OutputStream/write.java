@@ -17,16 +17,16 @@ public class write {
       byte[] b = {'h', 'e', 'l', 'l', 'o'};
       try {
 
-         // create a new output stream
+         // creamos outputSrtram para escribir
          OutputStream os = new FileOutputStream("test2.txt");
 
-         // craete a new input stream
+         // creamos inputStream para leer
          InputStream is = new FileInputStream("test2.txt");
 
-         // write something
+         // escribiendo algo
          os.write(b);
 
-         // read what we wrote
+         // leemos lo que se escribio
          for (int i = 0; i < b.length; i++) {
             System.out.print("" + (char) is.read());
          }
