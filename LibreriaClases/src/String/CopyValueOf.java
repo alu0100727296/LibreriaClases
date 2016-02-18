@@ -1,3 +1,6 @@
+/*
+COnvierte los elementos de una cadena en un String
+*/
 package String;
 
 /**
@@ -7,13 +10,13 @@ package String;
 public class CopyValueOf {
     public static void main(String[] args) {
   
-        // character array
+        // cadena de caracteres
         char[] charArr = { 'J', 'A', 'V', 'A' };
 
-        // returns a String that contains the characters of the character array
+        // retorna un string con los elementos de la cadena
         String str = String.copyValueOf(charArr);
 
-        // prints the string 
+        // imprie el String
         System.out.println(str);
    }
 }
