@@ -11,15 +11,16 @@ public class write {
       String str = "Hello world!";
 
       // create a new writer
-      Writer writer = new PrintWriter(System.out);
+     
 
       try {
-          
-         // write a string
-         writer.write(str);
+        Writer writer = new PrintWriter("C://test3.txt");
+         // write a string llo wor
+         writer.write(str,2,7);
 
-         // flush the writer. REFRESCAR
+         // flush the writer. 
          writer.flush();
+         writer.close();
 
      
       } catch (IOException ex) {
