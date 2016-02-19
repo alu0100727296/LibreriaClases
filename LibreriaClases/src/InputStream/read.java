@@ -10,36 +10,29 @@ public class read {
   public static void main(String[] args) throws Exception {
       
       InputStream is = null;
-      byte[] buffer=new byte[5];
+      byte[] buffer=new byte[5]; // solo quiero leer 5bytes
       char c;
       
       try{
-         // new input stream created
+         // creacion objeto InputStream
          is = new FileInputStream("C://test.txt");
          
          System.out.println("Characters printed:");
          
-         // read stream data into buffer
+         // metodo leer
          is.read(buffer);
          
-         // for each byte in the buffer
-         for(byte b:buffer)
-         {
-            // convert byte to character
+         // para cada byte en el buffer
+         for(byte b:buffer) {
+            // convierto byte a caracter
             c=(char)b;
-            
-            // prints character
+            // imprimo caracter
             System.out.print(c);
          }
       }catch(Exception e){
          
-         // if any I/O error occurs
+         // si ocurre algun error
          e.printStackTrace();
-      }finally{
-         
-         // releases system resources associated with this stream
-         if(is!=null)
-            is.close();
       }
    }
 }
