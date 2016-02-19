@@ -19,7 +19,7 @@ public class read {
          
          System.out.println("Characters printed:");
          
-         // metodo leer
+         // mlee 5 bytes y los coloca en el array
          is.read(buffer);
          
          // para cada byte en el buffer
