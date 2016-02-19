@@ -15,26 +15,21 @@ public class available {
       int i=0;
             
       try{
-         // new input stream created
+         // creacion objeto InputStram
          is = new FileInputStream("C://test.txt");
          
-          // invoke available
+          // llamamos al metodo available
          i = is.available();
                
-         // number of bytes available is printed
+         // imprimimos el numero de bytes disponibles
          System.out.println(i);
              
        
            
       }catch(Exception e){
          
-         // if any I/O error occurs
+         // si ha ocurrido algun error
          System.out.print("Sorry, the input stream is closed");
-      }finally{
-         
-         // releases system resources associated with this stream
-         if(is!=null)
-            is.close();
       }
    }
 }
