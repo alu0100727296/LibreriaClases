@@ -17,10 +17,9 @@ public class read {
         try {
             // read the first five chars
             for (int i = 0; i < 5; i++) {
-                char c = (char) reader.read();
+                char c = (char) reader.read(); // cambio a char, ya que read devuelve int
                 System.out.print("" + c);
             }
-
             // change line
             System.out.println();
 
