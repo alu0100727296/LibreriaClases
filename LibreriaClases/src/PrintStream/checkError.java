@@ -16,7 +16,7 @@ public class checkError {
       // print a string
       ps.println(s);
 
-      // check for errors and print
+      // chekea si ocurrieron errores
       ps.print(ps.checkError());
       ps.flush();
       ps.close();
