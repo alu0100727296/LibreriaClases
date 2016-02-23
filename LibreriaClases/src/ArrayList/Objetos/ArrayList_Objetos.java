@@ -44,14 +44,7 @@ public class ArrayList_Objetos {
 
             } catch (Exception e) {
                     e.printStackTrace();
-            } finally{
-                    try {
-                            if (s != null)
-                                    s.close();
-                    } catch (Exception e2) {
-                            e2.printStackTrace();
-                    }
-            }
+            } 
 
             System.out.println("... Guardados "+partidos.size()+" partidos de fútbol  ...");
 
